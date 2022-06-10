@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="flex-con">
+        <div class="play-again btn">Play Again!</div>
+        <p class="between">Number between 1 - 20</p>
+      </div>
+      <h1>Guess My Number</h1>
+      <div class="number">?</div>
+    </header>
+    <main>
+      <section class="left">
+        <input type="number" class="input-box" autofocus min="1" max="20" />
+        <div class="check-guess btn">Guess!</div>
+      </section>
+      <section class="right">
+        <div class="guess">Start guessing ...</div>
+        <div class="score">
+          <img src="100.svg" alt="score" /> Score: <span>20</span>
+        </div>
+        <div class="highscore">
+          <img src="medal.svg" alt="highscore" />
+          Highscore:
+          <span>0</span>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;600;800&family=Big+Shoulders+Inline+Text:wght@300;600;800&family=Tapestry&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #2f024a;
+  font-family: "Tapestry", serif;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  letter-spacing: 7px;
+  font-size: 50px;
+  color: #fff;
+  padding-bottom: 100px;
+  border-bottom: 10px solid #ffd9c0;
+  text-transform: uppercase;
+}
+
+.flex-con {
+  display: flex;
+  justify-content: space-around;
+}
+
+.between {
+  color: #8cc0de;
+  font-size: 25px;
+  letter-spacing: 2px;
+  margin: 40px 60px;
+}
+
+.number {
+  width: 150px;
+  background-color: #ffd9c0;
+  margin-top: -75px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #2e0249;
+  font-size: 90px;
+  border-radius: 10px;
+  padding: 16px 0;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px;
+  color: #fff;
+  flex-wrap: wrap;
+}
+
+.left {
+  /* border: 1px solid #fff; */
+  text-align: center;
+  margin: 20px;
+}
+
+.right {
+  /* border: 1px solid #fff; */
+  font-size: 40px;
+  letter-spacing: 3px;
+  margin: 20px;
+}
+
+.input-box {
+  width: 140px;
+  height: 70px;
+  font-size: 30px;
+  border-radius: 8px;
+}
+
+input[type="number"] {
+  color: #570a57;
+  opacity: 1;
+  padding: 10px;
+  text-align: center;
+}
+
+.guess {
+  color: #ffd9c0;
+  padding-bottom: 20px;
+}
+
+/* -------------Buttons-------------- */
+/* main features */
+.btn {
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  /* background-color: #fff; */
+  border-radius: 8px;
+  box-shadow: 3px 4px 3px rgba(193, 166, 166, 0.4);
+}
+
+.btn:active {
+  transform: translate(2px, 2px);
+}
+
+/* specific features */
+
+.play-again {
+  background-color: #8cc0de;
+  color: #570a57;
+  font-size: 26px;
+  margin: 40px 60px;
+  letter-spacing: 1px;
+}
+
+.check-guess {
+  background-color: #f4bfbf;
+  color: #570a57;
+  font-size: 20px;
+  margin: 10px 80px;
+  letter-spacing: 2px;
+}
+
+/* mobile screens style */
+@media screen and (max-width: 600px) {
+  .between {
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin: 40px 20px;
+  }
+  .play-again {
+    font-size: 16px;
+    margin: 40px 30px;
+  }
+  h1 {
+    letter-spacing: 5px;
+    font-size: 30px;
+  }
+  .right {
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    margin: 10px 10px 30px 10px;
+  }
+  main {
+    margin: 10px;
+  }
+  .number {
+    width: 100px;
+    margin-top: -60px;
+    font-size: 50px;
+  }
+}
